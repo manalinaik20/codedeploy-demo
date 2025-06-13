@@ -1,3 +1,4 @@
 #!/bin/bash
-echo "Starting application..."
-# Add your start logic here
+echo "Starting Python HTTP server..."
+cd ~/codedeploy-demo
+nohup python3 -m http.server 80 > /tmp/web.log 2>&1 &
